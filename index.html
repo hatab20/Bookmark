@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bidy">
+  <section class="home">
+ <div class=" ">
+  <div class=" text-center py-4 ">
+    <h2 class="title">Bookmarker</h2>
+  </div>
+ </div>
+ <div class="container">
+  <p class="container">....................................................................................................................................................................................................................................................................................................................</p>
+ </div>
+
+ 
+  <h4 class=" title1 text-center"><i class="fa-solid fa-bookmark "></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark "></i></h4>
+ 
+
+ <div class=" container my-4">
+  <label for="exampleFormControlInput1" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark "></i> Site Name</label>
+  <input type="email" class="form-control" oninput="validationNameInput()" id="siteName" placeholder="Bookmark Name">
+  <p id="msgName" class="alert-danger alert d-none mt-2 "></p>
+</div>
+<div class="container my-4">
+  <label for="exampleFormControlInput1" class="form-label fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+  <input type="email" class="form-control" oninput="validationUrlInput()" id="siteUrl" placeholder="Website URL">
+  <p id="msgUrl" class="alert-danger alert d-none mt-2 ">please enter a valid url</p>
+</div>
+
+<div class="text-center my-4">
+  <button type="button" id="btoon" onclick="addSite()" class="btn btn-danger  boot">  Submit  </button>
+</div> 
+
+<div class="container">
+  <p class="container">....................................................................................................................................................................................................................................................................................................................</p>
+ </div>
+
+
+ <table class="table mt-4 text-center bg-light container">
+  <thead>
+    <tr>
+      <th class="text-capitalize">index</th>
+      <th class="text-capitalize">Website Name</th>
+      <th class="text-capitalize">Visit</th>
+      <th class="text-capitalize">Delete</th>
+    </tr>
+  </thead>
+  <tbody id="tableContent">
+    <div id="row"></div>
+  </tbody>
+  
+ </table>
+
+
+
+
+   
+
+
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
