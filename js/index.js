@@ -18,6 +18,9 @@ function addSite() {
         displaySites();
         clear();
 
+        siteNameInput.classList.remove("is-valid");
+        siteUrlInput.classList.remove("is-valid");
+
         // SweetAlert Success
         // Swal.fire({
         //     title: 'Success!',
@@ -201,5 +204,7 @@ function validationUrlInput() {
 function clear() {
     siteNameInput.value = null;
     siteUrlInput.value = null;
+    siteNameInput.classList.remove("is-valid");
+    siteUrlInput.classList.remove("is-valid");
 }
 
